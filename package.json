@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "description": "frontend suite",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "run-p dev:**",
+    "dev:client": "sapper dev",
+    "dev:server": "node backend/server",
+    "build": "sapper build",
+    "export": "sapper export",
+    "start": "node __sapper__/build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "codemirror": "^5.58.1",
+    "compression": "^1.7.1",
+    "express": "^4.17.1",
+    "knex": "^0.21.6",
+    "objection": "^2.2.3",
+    "pg": "^8.3.3",
+    "rxjs": "^6.6.3",
+    "sirv": "^1.0.0",
+    "split-grid": "^1.0.9",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "cookie-parser": "^1.4.5",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "node-sass-magic-importer": "^5.3.2",
+    "npm-run-all": "^4.1.5",
+    "sapper": "^0.28.0",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "svelte": "^3.17.3",
+    "svelte-loader": "^2.9.0",
+    "svelte-preprocess": "^4.3.0",
+    "webpack": "^4.7.0",
+    "webpack-modules": "^1.0.0"
+  }
+}
